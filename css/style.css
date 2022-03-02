@@ -1,0 +1,111 @@
+body {
+	font-family: "Ubuntu", sans-serif;
+	margin: 0px;
+}
+
+
+
+
+/*NAV*/
+
+.logo{
+	width: 100%;
+}
+
+.bg-color{
+	background-color: #1A1A1A;
+}
+
+.bg-violet{
+	background-color: #4951E5;
+}
+.navbar-collapse{
+	justify-content: flex-end;
+}
+
+.navbar-toggler{
+	border: none;
+
+}
+
+.text-sky{
+	color: #27E0FC;
+;
+}
+
+/*INDEX*/
+.index__cover{
+	margin-top: 80px;
+	height: 850px;
+	background-image: url("../assets/img/background.png");
+}
+
+.card__box{
+	height: 100%;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 30px rgba(73, 84, 229, 10%);
+	border-radius: 12px;
+	color: #1A1A1A;
+}
+
+
+
+
+.form__input{
+    border-radius: 6px;
+    width: 100%;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+	font-size: 15px;
+	margin: 15px 0px;
+	transition: all 0.5s
+}
+
+.form__input:hover{
+	border: 1px solid #4951E5;
+}
+
+
+.nav-link{
+	padding-left: 0px;
+}
+
+label{
+	width: 100%;
+}
+
+.btn__primary{
+	border-radius: 6px;
+    width: 100%;
+    height: 40px;
+	background-color: #4951E5;
+	border: 0px;
+	color: white;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 15px;
+	margin: 15px 0px;
+	transition: all 0.5s
+
+}
+
+.btn__primary:hover{
+	background-color: #7C82FE;
+}
+
+
+
+@media only screen and (max-width: 540px){
+	.container{
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	.logo{
+		width: 80%;
+	}
+
+}
