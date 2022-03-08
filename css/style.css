@@ -38,6 +38,12 @@ body {
 ;
 }
 
+.flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /*INDEX*/
 .index__cover{
 	margin-top: 80px;
@@ -65,25 +71,46 @@ body {
 
 
 
-.cites__background{
+.bg-image{
 	background-image: url(../assets/img/background.png);
 }
 
+.grids{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+}
 
-.cites__card--box{
+.flexs{
+	display: flex;
+}
+
+.testimony__card--box{
 	height: 100%;
+	width: 100%;
 	background: rgba(255, 255, 255, .1);
 	border-radius: 12px;
 	color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
-.carousel-item{
+.grid{
+	display: grid;
+	grid-template-columns: auto;
+	width: 800px;
+	justify-content: center;
+}
+
+
+
+
+/*.carousel-item{
 	float: none;
 	margin-right: auto;
 	transition: auto;
-}
+}*/
 
 .servicios__img--size{
 	transform: scale(2.5);
@@ -195,9 +222,11 @@ label{
 .page__cover{
 	background: linear-gradient(#4B54DD 0%, rgba(39, 224, 252, 0.3) 58.31%, rgba(39, 224, 252, 0) 100%);
 	margin-top: 80px;
-	height: 850px;
 }
 
+.servicios__height{
+	height: 850px;
+}
 
 .bg__gradient--blue{
 	background-image: linear-gradient(#B2D9FD 0%, #FFFF 30%);
@@ -224,6 +253,62 @@ label{
 }
 
 
+
+/*PAGE >>> PLANES*/
+
+.planes__background{
+	background: linear-gradient(188.2deg, #2A2689 6.3%, #3484CE 57.28%, #8E2CBF 93.69%, #8E2CBF 93.7%);
+	height: 100%;
+}
+
+.cover__size{
+	background: none;
+	height: 850px;
+}
+
+.cover__container--padding{
+	padding-top: 100px;
+}
+
+.planes__card{
+	background: rgba(255, 255, 255, 0.3);
+	color: white;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.star__position{
+	position: relative;
+	top: -11px;
+}
+
+.img__size{
+	width: 100%;
+}
+
+.nosotros__shape--gradient{
+	background: linear-gradient(180deg, #D8DAFC 0%, rgba(216, 218, 252, 0) 100%);
+}
+
+.subtitle__text--size{
+	font-size: 50px;
+	font-weight: 600;
+}
+
+
+/*PAGE >>> NOSOTROS*/
+
+.nosotros__shape{
+	background-image: url(../assets/img/nosotros_shape.svg);
+	padding-top: 300px;
+	height: 600px;
+}
+
+.team__text{
+	font-size: 20px;
+}
 
 
 @media only screen and (max-width: 540px){
