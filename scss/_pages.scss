@@ -1,0 +1,146 @@
+body {
+	font-family: "Ubuntu", sans-serif;
+	margin: 0px;
+}
+
+
+.flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// INDEX
+
+.index__cover{
+	margin-top: 80px;
+	height: 850px;
+	background-image: url("../assets/img/background.png");
+}
+
+
+.testimony__card--box{
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, .1);
+	border-radius: 12px;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: auto;
+	width: 800px;
+	justify-content: center;
+}
+
+
+
+
+/*.carousel-item{
+	float: none;
+	margin-right: auto;
+	transition: auto;
+}*/
+
+
+.servicios__img--size{
+	transform: scale(2.5);
+}
+
+
+.py-10{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+// SERVICIOS
+
+.page__cover{
+	background: linear-gradient(#4B54DD 0%, rgba(39, 224, 252, 0.3) 58.31%, rgba(39, 224, 252, 0) 100%);
+}
+
+.servicios__height{
+	height: 850px;
+}
+
+
+//PLANES
+
+.planes__background{
+	background: linear-gradient(188.2deg, #2A2689 6.3%, #3484CE 57.28%, #8E2CBF 93.69%, #8E2CBF 93.7%);
+	height: 100%;
+}
+
+.cover__size{
+	background: none;
+	height: 850px;
+}
+
+.cover__container--padding{
+	padding-top: 100px;
+}
+
+.planes__card{
+	background: rgba(255, 255, 255, 0.3);
+	color: white;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.star__position{
+	position: relative;
+	top: -11px;
+}
+
+.img__size{
+	width: 100%;
+}
+
+.nosotros__shape--gradient{
+	background: linear-gradient(180deg, #D8DAFC 0%, rgba(216, 218, 252, 0) 100%);
+}
+
+.subtitle__text--size{
+	font-size: 50px;
+	font-weight: 600;
+}
+
+
+// NOSOTROS
+
+.nosotros__shape{
+	background-image: url(../assets/img/nosotros_shape.svg);
+	padding-top: 300px;
+	height: 600px;
+}
+
+.team__text{
+	font-size: 20px;
+}
+
+
+
+
+//RESPONSIVE
+
+@media only screen and (max-width: 540px){
+	.container{
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	.logo{
+		width: 80%;
+	}
+	.py-md-10{
+		padding-top: 10rem;
+		padding-bottom: 10rem; 
+	}
+}

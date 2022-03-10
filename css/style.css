@@ -1,328 +1,232 @@
+.bg--dark {
+  background-color: #1A1A1A; }
+
+.bg--primary {
+  background-color: #4951E5; }
+
+.bg--image {
+  background-image: url(../assets/img/background.png); }
+
+.font--color--secundary {
+  color: #27E0FC; }
+
+.font--color--primary {
+  color: #4951E5; }
+
+.card--box {
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 30px rgba(73, 84, 229, 0.1);
+  border-radius: 12px;
+  color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s; }
+  .card--box:hover {
+    transform: scale(1.03); }
+
+.form--input {
+  border-radius: 6px;
+  width: 100%;
+  height: 36px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  margin: 15px 0px;
+  transition: all 0.5s; }
+  .form--input:hover {
+    border: 1px solid #4951E5; }
+
+.form--input--dark {
+  border-radius: 6px;
+  width: 100%;
+  height: 36px;
+  background-color: transparent;
+  border: 2px solid #4951E5;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  margin: 15px 0px; }
+  .form--input--dark:hover {
+    border: 3px solid #4951E5; }
+
+.form--input--message {
+  border-radius: 6px;
+  width: 100%;
+  height: 360px;
+  background-color: transparent;
+  border: 2px solid #4951E5;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  margin: 15px 0px; }
+  .form--input--message:hover {
+    border: 3px solid #4951E5; }
+
+label {
+  width: 100%; }
+
+.btn--primary {
+  border-radius: 6px;
+  width: 100%;
+  height: 40px;
+  background-color: #4951E5;
+  border: 0px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  margin: 15px 0px;
+  transition: all 0.5s; }
+  .btn--primary:hover {
+    background-color: #7C82FE; }
+
+.btn--secundary {
+  border-radius: 6px;
+  width: 100%;
+  height: 40px;
+  background-color: none;
+  border: 2px solid #4951E5;
+  color: #4951E5;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  margin: 15px 0px;
+  transition: all 0.5s; }
+  .btn--secundary:hover {
+    background-color: lightgray; }
+
+.bg--gradient--blue {
+  background-image: linear-gradient(#B2D9FD 0%, #FFFF 30%); }
+
+.bg--gradient--green {
+  background-image: linear-gradient(#D9F2DF 0%, #FFFF 30%); }
+
+.bg--gradient--violet {
+  background-image: linear-gradient(#E4D4F0 0%, #FFFF 30%); }
+
+.bg--gradient--pink {
+  background-image: linear-gradient(#FFCCF4 0%, #FFFF 30%); }
+
+.bg--gradient--red {
+  background-image: linear-gradient(#F7CCCC 0%, #FFFF 30%); }
+
+.bg--gradient--yellow {
+  background-image: linear-gradient(#FCEAD7 0%, #FFFF 30%); }
+
+.logo {
+  width: 100%;
+  transition: all 0.5s; }
+  .logo:hover {
+    transform: scale(1.1); }
+
+.navbar-collapse {
+  justify-content: flex-end; }
+
+.navbar-toggler {
+  border: none; }
+
+.nav-link {
+  padding-left: 0px; }
+
 body {
-	font-family: "Ubuntu", sans-serif;
-	margin: 0px;
-}
+  font-family: "Ubuntu", sans-serif;
+  margin: 0px; }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
+.index__cover {
+  margin-top: 80px;
+  height: 850px;
+  background-image: url("../assets/img/background.png"); }
 
+.testimony__card--box {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-/*NAV*/
-
-.logo{
-	width: 100%;
-}
-
-.bg-color{
-	background-color: #1A1A1A;
-}
-
-.bg-violet{
-	background-color: #4951E5;
-}
-.navbar-collapse{
-	justify-content: flex-end;
-}
-
-.navbar-toggler{
-	border: none;
-
-}
-
-.text-sky{
-	color: #27E0FC;
-;
-}
-
-.text-violet{
-	color: #4951E5;
-;
-}
-
-.flex{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-/*INDEX*/
-.index__cover{
-	margin-top: 80px;
-	height: 850px;
-	background-image: url("../assets/img/background.png");
-}
-
-.position--bottom{
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	height: auto;
-}
-
-.card__box{
-	height: 100%;
-	background: #FFFFFF;
-	box-shadow: 0px 10px 30px rgba(73, 84, 229, 10%);
-	border-radius: 12px;
-	color: #1A1A1A;
-	display: flex;
-	flex-direction: column;
-}
-
-
-
-.bg-image{
-	background-image: url(../assets/img/background.png);
-}
-
-.grids{
-	display: grid;
-	grid-template-columns: auto auto auto;
-	justify-content: center;
-}
-
-.flexs{
-	display: flex;
-}
-
-.testimony__card--box{
-	height: 100%;
-	width: 100%;
-	background: rgba(255, 255, 255, .1);
-	border-radius: 12px;
-	color: #FFFFFF;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.grid{
-	display: grid;
-	grid-template-columns: auto;
-	width: 800px;
-	justify-content: center;
-}
-
-
-
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  width: 800px;
+  justify-content: center; }
 
 /*.carousel-item{
 	float: none;
 	margin-right: auto;
 	transition: auto;
 }*/
+.servicios__img--size {
+  transform: scale(2.5); }
 
-.servicios__img--size{
-	transform: scale(2.5);
-}
+.py-10 {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
-.form__input{
-    border-radius: 6px;
-    width: 100%;
-    height: 36px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
-	transition: all 0.5s
-}
+.page__cover {
+  background: linear-gradient(#4B54DD 0%, rgba(39, 224, 252, 0.3) 58.31%, rgba(39, 224, 252, 0) 100%); }
 
-.form__input:hover{
-	border: 1px solid #4951E5;
-}
+.servicios__height {
+  height: 850px; }
 
-.form__input--dark{
-    border-radius: 6px;
-    width: 100%;
-    height: 36px;
-    background-color: transparent;
-    border: 2px solid #4951E5;
-    box-sizing: border-box;
-    color: black;
-    font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
-}
+.planes__background {
+  background: linear-gradient(188.2deg, #2A2689 6.3%, #3484CE 57.28%, #8E2CBF 93.69%, #8E2CBF 93.7%);
+  height: 100%; }
 
-.form__input--dark:hover{
-	border: 3px solid #4951E5;
-}
+.cover__size {
+  background: none;
+  height: 850px; }
 
+.cover__container--padding {
+  padding-top: 100px; }
 
-.form__input--message{
-    border-radius: 6px;
-    width: 100%;
-    height: 360px;
-    background-color: transparent;
-    border: 2px solid #4951E5;
-    box-sizing: border-box;
-    color: black;
-    font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
-}
+.planes__card {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.form__input--message:hover{
-	border: 3px solid #4951E5;
-}
+.star__position {
+  position: relative;
+  top: -11px; }
 
+.img__size {
+  width: 100%; }
 
-.nav-link{
-	padding-left: 0px;
-}
+.nosotros__shape--gradient {
+  background: linear-gradient(180deg, #D8DAFC 0%, rgba(216, 218, 252, 0) 100%); }
 
-label{
-	width: 100%;
-}
+.subtitle__text--size {
+  font-size: 50px;
+  font-weight: 600; }
 
-.btn__primary{
-	border-radius: 6px;
-    width: 100%;
-    height: 40px;
-	background-color: #4951E5;
-	border: 0px;
-	color: white;
-	font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
-	transition: all 0.5s
+.nosotros__shape {
+  background-image: url(../assets/img/nosotros_shape.svg);
+  padding-top: 300px;
+  height: 600px; }
 
-}
+.team__text {
+  font-size: 20px; }
 
-.btn__primary:hover{
-	background-color: #7C82FE;
-}
+@media only screen and (max-width: 540px) {
+  .container {
+    width: 90%; } }
 
-.btn__secundary{
-	border-radius: 6px;
-    width: 100%;
-    height: 40px;
-	background-color: none;
-	border: 2px solid #4951E5;
-	color: #4951E5;
-	font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
-	transition: all 0.5s
-}
-
-.btn__secundary:hover{
-	background-color: lightgray;
-}
-
-.py-10{
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-}
-
-/*PAGE >>> SERVICIOS*/
-
-.page__cover{
-	background: linear-gradient(#4B54DD 0%, rgba(39, 224, 252, 0.3) 58.31%, rgba(39, 224, 252, 0) 100%);
-	margin-top: 80px;
-}
-
-.servicios__height{
-	height: 850px;
-}
-
-.bg__gradient--blue{
-	background-image: linear-gradient(#B2D9FD 0%, #FFFF 30%);
-}
-
-.bg__gradient--green{
-	background-image: linear-gradient(#D9F2DF 0%, #FFFF 30%);
-}
-
-.bg__gradient--violet{
-	background-image: linear-gradient(#E4D4F0 0%, #FFFF 30%);
-}
-
-.bg__gradient--pink{
-	background-image: linear-gradient(#FFCCF4 0%, #FFFF 30%);
-}
-
-.bg__gradient--red{
-	background-image: linear-gradient(#F7CCCC 0%, #FFFF 30%);
-}
-
-.bg__gradient--yellow{
-	background-image: linear-gradient(#FCEAD7 0%, #FFFF 30%);
-}
-
-
-
-/*PAGE >>> PLANES*/
-
-.planes__background{
-	background: linear-gradient(188.2deg, #2A2689 6.3%, #3484CE 57.28%, #8E2CBF 93.69%, #8E2CBF 93.7%);
-	height: 100%;
-}
-
-.cover__size{
-	background: none;
-	height: 850px;
-}
-
-.cover__container--padding{
-	padding-top: 100px;
-}
-
-.planes__card{
-	background: rgba(255, 255, 255, 0.3);
-	color: white;
-	border-radius: 15px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.star__position{
-	position: relative;
-	top: -11px;
-}
-
-.img__size{
-	width: 100%;
-}
-
-.nosotros__shape--gradient{
-	background: linear-gradient(180deg, #D8DAFC 0%, rgba(216, 218, 252, 0) 100%);
-}
-
-.subtitle__text--size{
-	font-size: 50px;
-	font-weight: 600;
-}
-
-
-/*PAGE >>> NOSOTROS*/
-
-.nosotros__shape{
-	background-image: url(../assets/img/nosotros_shape.svg);
-	padding-top: 300px;
-	height: 600px;
-}
-
-.team__text{
-	font-size: 20px;
-}
-
-
-@media only screen and (max-width: 540px){
-	.container{
-		width: 90%;
-	}
-}
-
-@media only screen and (max-width: 992px){
-	.logo{
-		width: 80%;
-	}
-	.py-md-10{
-		padding-top: 10rem;
-		padding-bottom: 10rem; 
-	}
-}
+@media only screen and (max-width: 992px) {
+  .logo {
+    width: 80%; }
+  .py-md-10 {
+    padding-top: 10rem;
+    padding-bottom: 10rem; } }

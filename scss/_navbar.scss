@@ -1,0 +1,19 @@
+.logo{
+	width: 100%;
+	transition: all 0.5s;
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+
+.navbar-collapse{
+	justify-content: flex-end;
+}
+
+.navbar-toggler{
+	border: none;
+}
+
+.nav-link{
+	padding-left: 0px;
+}
