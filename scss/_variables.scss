@@ -3,3 +3,9 @@
 $primary--color: #4951E5;
 $secundary--color: #27E0FC;
 $dark--color: #1A1A1A;
+
+$colors:(
+	primary: $primary--color,
+	secundary: $secundary--color,
+	dark: $dark--color
+);

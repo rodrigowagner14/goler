@@ -4,7 +4,11 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Servicios | Goler</title>
+	<title>Nosotros | Goler</title>
+
+	<!-- SEO -->
+	<meta name="description" content="Se muestra información sobre nosotros, es decir, quienes somos y por qué debes elegirnos">
+   	<meta name="keywords"  content="DESARROLLO, TRANSPARENCIA, CONFIANZA, CALIDAD, INNOVACIÓN, PROYECTOS, AGENCIA WEB, MARKETING, DISEÑO, TECNOLOGÍA">
 
 	<!-- Tipografía -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +23,9 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Favicon -->
+	<link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -89,9 +96,13 @@
 
 						<div class="col-12 wow animate__animated animate__fadeInRight">
 							<p class="py-5">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							Somos una empresa con más de 5 años de trayectoria, tuvimos que afrontar muchos retos que pudimos superar exitosamente, siempre manteniéndonos a la vanguardia y superando los desafíos que la industria tecnológica requiere. Estamos orgullosos en decir que hemos crecido a un ritmo impresionante.
+
+							Trabajamos en decenas de proyectos con empresas localizadas en diferentes países, entre ellas, multinacionales. Nos gusta mantener una relación duradera con nuestros clientes, por eso creemos que el feedback es central en este proceso, y nuestros clientes nos han dejado saber que están satisfechos con nuestros productos y servicios, y cuales son los puntos a mejorar.
+
+							Todo esto es gracias a nuestro multidisciplinario y sumamente versátil, propiciando a la innovación como eje central.
+
+							Los retos nos gustan y queremos que vos seas el próximo, trabajemos juntos y veamos la magia!
 							</p>
 						</div>
 
@@ -170,36 +181,17 @@
 		<div class="container py-5">
 			<div class="row g-5">
 				<!-- Logo -->
-				<div class="col-12 col-md-3"><a class="navbar-brand" href="../index.html">
-					<img src="../assets/img/logo_goler.svg" class="logo pb-5"></a>
+				<div class="col-12 col-md-3"><a class="navbar-brand" href="index.html">
+					<img src="../assets/img/logo_goler.svg" class="logo-footer pb-5"></a>
 					<div class="small">
 						<p>Copyright © 2022 Rodrigo Wagner. All Rights Reserved.</p>
 						<p>This product is protected by copyright and distributed under licenses restricting copying, distribution, anddecompilation.</p>
 					</div>
 				</div>
 
-				<!-- Newsletter -->
-				<form class="col-12 col-lg-3">
-					<h4 class="mb-4">Suscribite a nuestro Newsletter:</h4>
-					<div class="mb-3">
-						<label for="name">Nombre:
-						<input type="text" name="nombre" class="d-block form--input">
-						</label>
-					</div>
-					<div class="mb-3">
-						<label for="email">E-mail:
-						<input type="email" name="email" class="d-block form--input">
-						</label>
-					</div>
-					<div>
-						<input type="submit" value="Suscribirse" name="Suscribirse" class="btn btn--primary">
-					</div>
-				</form>
-
-
 				<!-- Navegación -->
-				<nav class="col-12 col-lg-3">
-					<h4 class="mb-4">Navegación:</h4>
+				<nav class="col-12 col-lg-2 pt-lg-2">
+					<h4 class="h5 mb-4">Navegación:</h4>
 					<ul class="list-unstyled">
 						<li><a href="../index.html" class="nav-link text-white">Inicio</a></li>
 						<li><a href="servicios.html" class="nav-link text-white">Servicios</a></li>
@@ -209,11 +201,30 @@
 					</ul>
 				</nav>
 
-				<div class="col-12 col-lg-3">
-					<h4 class="mb-4">Seguinos:</h4>
-					<img src="../assets/img/logo_facebook.svg" alt="Facebook" class="pe-4">
-					<img src="../assets/img/logo_instagram.svg" alt="Instagram" class="pe-4">
-					<img src="../assets/img/logo_linkedin.svg" alt="LinkedIn" class="pe-4">
+				<!-- Newsletter -->
+				<form class="col-12 col-lg-4 pt-lg-2">
+					<h4 class="h5 mb-4">Nuestro Newsletter:</h4>
+					<div class="mb-4">
+						<label for="name">
+						<input type="text" name="nombre" placeholder="Nombre" autocomplete="off" class="d-block newsletter__form--name">
+						</label>
+					</div>
+					<div class="mb-4">
+						<label for="email">
+						<input type="email" name="email" placeholder="Email" autocomplete="off" class="d-block newsletter__form--mail">
+						</label>
+					</div>
+					<div>
+						<input type="submit" value="Suscribirse" name="Suscribirse" class="btn--primary">
+					</div>
+				</form>
+
+				<!-- Redes sociales -->
+				<div class="col-12 col-lg-2 pt-lg-2">
+					<h4 class="h5 mb-4">Seguinos:</h4>
+					<img src="../assets/img/logo_facebook.svg" alt="Facebook" class="pe-3">
+					<img src="../assets/img/logo_instagram.svg" alt="Instagram" class="pe-3">
+					<img src="../assets/img/logo_linkedin.svg" alt="LinkedIn" class="pe-3">
 				</div>
 			</div>
 		</div>

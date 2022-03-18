@@ -1,11 +1,21 @@
-// BACKGROUNDS
-
-.bg--dark{
-	background-color: $dark--color;
+@mixin size($width, $height){
+	width: $width;
+	height: $height;
 }
 
-.bg--primary{
-	background-color: $primary--color;
+@mixin bg-c-b($background, $color, $border){
+	background-color: $background;
+	color: $color;
+	border: $border;
+}
+
+
+// BACKGROUNDS ------------------------------------------------------------------------------------
+
+@each $bg, $color in $colors{
+	.bg--#{$bg}{
+		background-color: $color;
+	}
 }
 
 .bg--image{
@@ -13,21 +23,21 @@
 }
 
 
+// FONTS -----------------------------------------------------------------------------------------
 
-// FONTS
-
-.font--color--secundary{
-	color: $secundary--color;
+@each $font, $color in $colors{
+	.font--color--#{$font}{
+		color: $color;
+	}
 }
 
-.font--color--primary{
-	color: $primary--color;
+.font--gradient{
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	background-image: linear-gradient(310deg,$primary--color,$secundary--color)
 }
 
-
-
-
-// CARDS
+// CARDS -----------------------------------------------------------------------------------
 
 .card--box{
 	height: 100%;
@@ -44,59 +54,47 @@
 }
 
 
+// FORMS ------------------------------------------------------------------------------------
 
-
-// FORMS
-
-.form--input{
-    border-radius: 6px;
-    width: 100%;
-    height: 36px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
+.size--input{
+	@include size(100%, 50px);
+	border-radius: 6px;
 	transition: all 0.5s;
-	&:hover{
-		border: 1px solid $primary--color;
-	}
+}
+
+.newsletter__form{
+    @extend .size--input;
+    padding: 20px 25px 20px 55px;
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
 }
 
 
-.form--input--dark{
-    border-radius: 6px;
-    width: 100%;
-    height: 36px;
-    background-color: transparent;
-    border: 2px solid $primary--color;
+.newsletter__form--name{
+	@extend .newsletter__form;
+	background: url(../assets/img/name-icon.svg) 20px center no-repeat, rgba(0, 0, 0, 0.1);
+    background-size: 24px, auto;
+}
+
+.newsletter__form--mail{
+	@extend .newsletter__form;
+	background: url(../assets/img/email-icon.svg) 20px center no-repeat, rgba(0, 0, 0, 0.1);
+    background-size: 24px, auto;
+}
+
+.contact__form{
+    @extend .size--input;
+    @include bg-c-b(none, black, 2px solid $primary--color);
     box-sizing: border-box;
-    color: black;
-    font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
 	&:hover{
 		border: 3px solid $primary--color;
 	}
 }
 
 
-
-.form--input--message{
-    border-radius: 6px;
-    width: 100%;
+.contact__form--message{
+	@extend .contact__form;
     height: 360px;
-    background-color: transparent;
-    border: 2px solid $primary--color;
-    box-sizing: border-box;
-    color: black;
-    font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
-	&:hover{
-		border: 3px solid $primary--color;
-	}
 }
 
 
@@ -107,65 +105,43 @@ label{
 
 
 
-// BUTTONS
+// BUTTONS ---------------------------------------------------------------------------------------
 
 .btn--primary{
-	border-radius: 6px;
-    width: 100%;
-    height: 40px;
-	background-color: $primary--color;
-	border: 0px;
-	color: white;
-	font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
-	transition: all 0.5s;
+	@extend .size--input;
+	@include bg-c-b($primary--color, white, none);
 	&:hover{
-		background-color: #7C82FE;
+		transform: scale(1.04);
+		background-color: #263086;
 	}
 }
 
 
 .btn--secundary{
-	border-radius: 6px;
-    width: 100%;
-    height: 40px;
-	background-color: none;
-	border: 2px solid $primary--color;
-	color: $primary--color;
-	font-family: "Ubuntu", sans-serif;
-	font-size: 15px;
-	margin: 15px 0px;
-	transition: all 0.5s;
+	@extend .size--input;
+	@include bg-c-b(none, $primary--color, none);
 	&:hover{
-		background-color: lightgray;
+		transform: scale(1.04);
+		background-color: #D9DDFF;
 	}
 }
 
 
-//GRADIENTS
+//GRADIENTS ------------------------------------------------------------------------------------
 
-.bg--gradient--blue{
-	background-image: linear-gradient(#B2D9FD 0%, #FFFF 30%);
-}
+//MAP
+$gradients:(
+	blue: #B2D9FD,
+	green: #D9F2DF,
+	violet: #E4D4F0,
+	pink: #FFCCF4,
+	red: #F7CCCC,
+	yellow: #FCEAD7,
+);
 
-.bg--gradient--green{
-	background-image: linear-gradient(#D9F2DF 0%, #FFFF 30%);
-}
-
-.bg--gradient--violet{
-	background-image: linear-gradient(#E4D4F0 0%, #FFFF 30%);
-}
-
-.bg--gradient--pink{
-	background-image: linear-gradient(#FFCCF4 0%, #FFFF 30%);
-}
-
-.bg--gradient--red{
-	background-image: linear-gradient(#F7CCCC 0%, #FFFF 30%);
-}
-
-.bg--gradient--yellow{
-	background-image: linear-gradient(#FCEAD7 0%, #FFFF 30%);
+@each $gradient, $color in $gradients {
+	.bg--gradient--#{$gradient}{
+		background-image: linear-gradient($color 0%, #FFFF 30%);
+	}
 }
 
