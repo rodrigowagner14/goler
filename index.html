@@ -14,6 +14,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 	<!-- CSS Animaciones -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -35,6 +36,7 @@
 
 	<header>
 		<!-- Navbar -->
+
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg--dark">
 		  <div class="container">
 		    <a class="navbar-brand" href="index.html"><img src="assets/img/logo_goler.svg" class="logo"></a>
@@ -65,23 +67,33 @@
 
 	</header>
 
+
+
+
+
 	<main>
 		<!-- Cover -->
-		<section class="index__cover pt-5 mb-5 p-md-0">
+
+		<section class="index__cover min-vh-100">
 			<div class="container">
 				<div class="row align-items-center">
 					<!-- Image -->
-					<img src="assets/img/home_cohete.svg" alt="Cohete despegando" class="col-12 col-md-6 order-md-2 pt-5 wow animate__animated animate__fadeInRight">
+					<img src="assets/img/index_cohete.png" alt="Cohete despegando" class="col-12 col-md-6 order-md-2 pt-5 wow animate__animated animate__fadeInRight">
+
 
 					<!-- Title -->
-					<h1 class="display-1 col-12 col-md-6 text-white order-md-1 py-md-5 text-center text-md-start wow animate__animated animate__fadeInLeft">Creamos<span class="font--gradient d-block ">Experiencia</span></h1>
-	
+					<h1 class="col-12 col-md-6 order-md-1 display-1 text-white text-center text-md-start wow animate__animated animate__fadeInLeft">Creamos<span class="font--gradient d-block ">Experiencia</span></h1>	
+				</div>
 			</div>
 		</section>
 
+
+
+
 		<!-- Cards de servicios -->
-		<section class="container mb-5">
-			<h2 class="display-4 my-5 wow animate__animated animate__fadeInLeft">¿Qué es lo que hacemos?</h2>
+
+		<section class="container mb-5 pb-5">
+			<h2 class="display-4 my-5 wow animate__animated animate__fadeIn">¿Qué es lo que hacemos?</h2>
 			<div class="row g-4">
 				<div class="col-12 col-xl-6 wow animate__animated animate__fadeInLeft">
 					<div class="p-5 card--box align-items-start">
@@ -135,20 +147,97 @@
 			</div>
 		</section>
 
-		<section class="bg--primary text-white py-5">
-			<div class="container">
-				<div class="pb-3 wow animate__animated animate__fadeInLeft"><h2 class="display-4">¿Por qué <b>Goler</b>?</h2></div>
-				<div class="wow animate__animated animate__fadeInLeft"><p>Somos una empresa con más de 5 años de trayectoria, tuvimos que afrontar muchos retos que pudimos superar exitosamente, siempre manteniéndonos a la vanguardia y superando los desafíos que la industria tecnológica requiere. Estamos orgullosos en decir que hemos crecido a un ritmo impresionante.</p>
-				<p>Trabajamos en decenas de proyectos con empresas localizadas en diferentes países, entre ellas, multinacionales. Nos gusta mantener una relación duradera con nuestros clientes, por eso creemos que el feedback es central en este proceso, y nuestros clientes nos han dejado saber que están satisfechos con nuestros productos y servicios, y cuales son los puntos a mejorar.</p>
-				<p>Todo esto es gracias a nuestro multidisciplinario y sumamente versátil, propiciando a la innovación como eje central.</p>
-				<p>Los retos nos gustan y queremos que vos seas el próximo, trabajemos juntos y veamos la magia!</p>
+
+		<!-- Descripción de la empresa -->
+
+		<section>
+
+			<div class="position-relative overflow-hidden" style="height:36px;margin-top:-35px;">
+				<div class="w-full absolute bottom-0 start-0 end-0" style="transform: scale(2);transform-origin: top center;color: #4951E5;">
+			    	<svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			        	<path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+			      	</svg>
+			 	</div>
+			 </div>
+
+			<div class="bg--primary text-white py-5">
+				<div class="container">
+					<div class="pb-3 wow animate__animated animate__fadeIn"><h2 class="display-4">¿Por qué <span class="fw-bold">Goler</span>?</h2></div>
+					<div class="wow animate__animated animate__fadeIn"><p>Somos una empresa con más de 5 años de trayectoria, tuvimos que afrontar muchos retos que pudimos superar exitosamente, siempre manteniéndonos a la vanguardia y superando los desafíos que la industria tecnológica requiere. Estamos orgullosos en decir que hemos crecido a un ritmo impresionante.</p>
+					<p>Trabajamos en decenas de proyectos con empresas localizadas en diferentes países, entre ellas, multinacionales. Nos gusta mantener una relación duradera con nuestros clientes, por eso creemos que el feedback es central en este proceso, y nuestros clientes nos han dejado saber que están satisfechos con nuestros productos y servicios, y cuales son los puntos a mejorar.</p>
+					<p>Todo esto es gracias a nuestro multidisciplinario y sumamente versátil, propiciando a la innovación como eje central.</p>
+					<p>Los retos nos gustan y queremos que vos seas el próximo, trabajemos juntos y veamos la magia!</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 
+		<!-- Testimonios -->
+
+		<section class="bg--image">
+			<div class="container py-5">
+				<h2 class="display-4 text-white mb-5 wow animate__animated animate__fadeIn">¿Qué opinan nuestros clientes?</h2>
+				<div class="row g-4">
+					<div class="col-12 col-md-4  wow animate__animated animate__fadeInUp">
+						<div class="testimony__card--box text-center p-5">
+							<img src="assets/img/person1.png" class="mb-3">
+							<h3>Arturo Bremen</h3>
+							<p>Gracias a esta agencia pude sacar adelante mi startup, no solo me ayudaron con la app que estaba necesitando, sino que brindaron asesoría muy valiosa que permitió que mi empresa tenga el éxito que tiene hoy.</p>
+							<img src="assets/img/icon_comillas.svg">
+						</div>
+					</div>
+
+					<div class="col-12 col-md-4  wow animate__animated animate__fadeInUp">
+						<div class="testimony__card--box text-center p-5">
+							<img src="assets/img/person2.png" class="mb-3">
+							<h3>Martin Flores</h3>
+							<p>La experiencia que tuve con Goler fue muy buena, ellos me brindaron una solución integral que permitió resolver el problema que estaba teniendo. Un trato amable y profesional, un gusto trabajar con esta empresa.</p>
+							<img src="assets/img/icon_comillas.svg">
+						</div>
+					</div>
+
+					<div class="col-12 col-md-4  wow animate__animated animate__fadeInUp">
+						<div class="testimony__card--box text-center p-5">
+							<img src="assets/img/person3.png" class="mb-3">
+							<h3>Leandro Santini</h3>
+							<p>Con un grupo de amigos teníamos un proyecto que queríamos lanzar, y estamos muy contento con la decisión de haber contratado Goler, pudimos lanzar nuestra Web App, y el crecimiento es impresionante. Actualmente seguimos trabajando con ellos! </p>
+							<img src="assets/img/icon_comillas.svg">
+						</div>
+					</div>
+
+					<!-- Marcas -->
+					<div class="row pt-5 my-5 align-items-center wow animate__animated animate__fadeInUp">
+						<h3 class="text-center text-white h5 pb-4">Algunas marcas que confiaron en nosotros</h3>
+						<div class="col-6 col-md-3">
+							<a href="https://www.google.com"><img src="assets/img/logo-google.svg" alt="Google" class="w-75 opacity ps-4 py-3"></a>
+						</div>
+
+						<div class="col-6 col-md-3">
+							<a href="https://www.accenture.com"><img src="assets/img/logo-accenture.svg" alt="Accenture" class="w-75 opacity ps-4 py-3"></a>
+						</div>
+						
+						<div class="col-6 col-md-3">
+							<a href="https://www.globant.com"><img src="assets/img/logo-globant.svg" alt="Globant" class="w-75 opacity ps-4 py-3"></a>
+						</div>
+
+						<div class="col-6 col-md-3">
+							<a href="https://www.pedidosya.com"><img src="assets/img/logo-pedidosya.svg" alt="Pedidos Ya" class="w-75 opacity ps-4 py-3"></a>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+	<!-- Footer -->
+
 	<footer class="bd-footer bg--dark text-white py-5">
-		<div class="container py-5">
+		<div class="container py-5 wow animate__animated animate__fadeIn">
 			<div class="row g-5">
 				<!-- Logo -->
 				<div class="col-12 col-md-3"><a class="navbar-brand" href="index.html">
@@ -192,9 +281,12 @@
 				<!-- Redes sociales -->
 				<div class="col-12 col-lg-2 pt-lg-2">
 					<h4 class="h5 mb-4">Seguinos:</h4>
-					<img src="assets/img/logo_facebook.svg" alt="Facebook" class="pe-3">
-					<img src="assets/img/logo_instagram.svg" alt="Instagram" class="pe-3">
-					<img src="assets/img/logo_linkedin.svg" alt="LinkedIn" class="pe-3">
+
+					<a href="https://www.facebook.com"><img src="assets/img/logo_facebook.svg" alt="Facebook" class="opacity pe-3"></a>
+
+					<a href="https://www.instagram.com"><img src="assets/img/logo_instagram.svg" alt="Instagram" class="opacity pe-3"></a>
+
+					<a href="https://www.linkedin.com"><img src="assets/img/logo_linkedin.svg" alt="LinkedIn" class="opacity pe-3"></a>
 				</div>
 			</div>
 		</div>

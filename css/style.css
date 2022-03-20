@@ -8,7 +8,8 @@
   background-color: #1A1A1A; }
 
 .bg--image {
-  background-image: url(../assets/img/background.png); }
+  background-image: url(../assets/img/background.png);
+  background-size: cover; }
 
 .font--color--primary {
   color: #4951E5; }
@@ -22,7 +23,7 @@
 .font--gradient {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(310deg, #4951E5, #27E0FC); }
+  background-image: linear-gradient(90deg, #4951E5, #27E0FC); }
 
 .card--box {
   height: 100%;
@@ -127,8 +128,9 @@ label {
     color: font--color--primary; }
 
 body {
-  font-family: "Ubuntu", sans-serif;
-  margin: 0px; }
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  color: #1A1A1A; }
 
 .flex {
   display: flex;
@@ -136,9 +138,17 @@ body {
   align-items: center; }
 
 .index__cover {
-  margin-top: 80px;
-  height: 850px;
-  background-image: url("../assets/img/background.png"); }
+  background-image: url("../assets/img/background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.display-1 {
+  font-weight: 600; }
+
+h3 {
+  font-weight: 600; }
 
 .testimony__card--box {
   height: 100%;
@@ -150,17 +160,12 @@ body {
   flex-direction: column;
   align-items: center; }
 
-.grid {
-  display: grid;
-  grid-template-columns: auto;
-  width: 800px;
-  justify-content: center; }
+.opacity {
+  opacity: 70%;
+  transition: all 0.5s; }
+  .opacity:hover {
+    opacity: 100%; }
 
-/*.carousel-item{
-	float: none;
-	margin-right: auto;
-	transition: auto;
-}*/
 .servicios__img--size {
   transform: scale(2.5); }
 
@@ -197,6 +202,10 @@ body {
 .star--position {
   position: relative;
   top: -11px; }
+
+.font--price {
+  font-size: 3.2rem;
+  font-weight: 600; }
 
 .img__size {
   width: 100%; }
