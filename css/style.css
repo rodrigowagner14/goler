@@ -1,3 +1,9 @@
+.flex, .testimony__card--box, .planes__card--box, .index__cover, .servicios__cover, .contacto__cover, .planes__cover, .planes__card--list, .nosotros__cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
 .bg--primary {
   background-color: #4951E5; }
 
@@ -25,28 +31,57 @@
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(90deg, #4951E5, #27E0FC); }
 
+.font--opacity {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s; }
+  .font--opacity:hover {
+    color: white; }
+
 .card--box {
+  width: 100%;
   height: 100%;
-  background: #FFFFFF;
-  box-shadow: 0px 10px 30px rgba(73, 84, 229, 0.1);
-  border-radius: 12px;
+  background-color: white;
   color: #1A1A1A;
+  border-radius: 18px;
+  box-shadow: 0px 10px 30px rgba(73, 84, 229, 0.1);
   display: flex;
   flex-direction: column;
   transition: all 0.5s; }
   .card--box:hover {
     transform: scale(1.03); }
 
-.size--input, .newsletter__form, .newsletter__form--name, .newsletter__form--mail, .contact__form, .contact__form--message, .btn--primary, .btn--secundary {
+.testimony__card--box {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 18px;
+  box-shadow: none; }
+
+.planes__card--box {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 18px;
+  box-shadow: none;
+  justify-content: flex-start;
+  transition: all 0.5s; }
+  .planes__card--box:hover {
+    transform: scale(1.05); }
+
+.size--input, .newsletter__form, .newsletter__form--name, .newsletter__form--mail, .contacto__form, .contacto__form--message, .btn--primary, .btn--secundary {
   width: 100%;
   height: 50px;
-  border-radius: 6px;
+  border-radius: 9px;
   transition: all 0.5s; }
 
 .newsletter__form, .newsletter__form--name, .newsletter__form--mail {
   padding: 20px 25px 20px 55px;
   color: rgba(255, 255, 255, 0.5);
   border: none; }
+  .newsletter__form:hover, .newsletter__form--name:hover, .newsletter__form--mail:hover {
+    background-color: rgba(255, 255, 255, 0.02); }
 
 .newsletter__form--name {
   background: url(../assets/img/name-icon.svg) 20px center no-repeat, rgba(0, 0, 0, 0.1);
@@ -56,15 +91,15 @@
   background: url(../assets/img/email-icon.svg) 20px center no-repeat, rgba(0, 0, 0, 0.1);
   background-size: 24px, auto; }
 
-.contact__form, .contact__form--message {
+.contacto__form, .contacto__form--message {
   background-color: none;
   color: black;
   border: 2px solid #4951E5;
   box-sizing: border-box; }
-  .contact__form:hover, .contact__form--message:hover {
+  .contacto__form:hover, .contacto__form--message:hover {
     border: 3px solid #4951E5; }
 
-.contact__form--message {
+.contacto__form--message {
   height: 360px; }
 
 label {
@@ -132,72 +167,31 @@ body {
   margin: 0px;
   color: #1A1A1A; }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.index__cover {
-  background-image: url("../assets/img/background.png");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
 .display-1 {
   font-weight: 600; }
 
 h3 {
   font-weight: 600; }
 
-.testimony__card--box {
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .opacity {
-  opacity: 70%;
+  opacity: 0.5;
   transition: all 0.5s; }
   .opacity:hover {
-    opacity: 100%; }
+    opacity: 1; }
 
-.servicios__img--size {
-  transform: scale(2.5); }
+.index__cover {
+  background-image: url("../assets/img/background.png");
+  background-size: cover; }
 
-.py-10 {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
+.index__description--bg {
+  background-image: linear-gradient(110deg, #4951E5, #27E0FC); }
 
-.page__cover {
+.servicios__cover, .contacto__cover {
   background: linear-gradient(#4B54DD 0%, rgba(39, 224, 252, 0.3) 58.31%, rgba(39, 224, 252, 0) 100%); }
-
-.servicios__height {
-  height: 850px; }
 
 .planes__background {
   background: linear-gradient(188.2deg, #2A2689 6.3%, #3484CE 57.28%, #8E2CBF 93.69%, #8E2CBF 93.7%);
   height: 100%; }
-
-.cover__size {
-  background: none;
-  height: 850px; }
-
-.cover__container--padding {
-  padding-top: 100px; }
-
-.planes__card {
-  height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  color: white;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 .star--position {
   position: relative;
@@ -207,20 +201,32 @@ h3 {
   font-size: 3.2rem;
   font-weight: 600; }
 
-.img__size {
-  width: 100%; }
+.text--box {
+  padding: 2px 50px;
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 3rem; }
 
-.nosotros__shape--gradient {
+.planes__card--list {
+  justify-content: flex-start;
+  height: 22rem; }
+
+.list--text {
+  background: url(../assets/img/icon_check.svg) 0px center no-repeat;
+  background-size: 12px, auto;
+  padding: 0.8rem 0 0.9rem 1.6rem;
+  text-align: center; }
+
+.nosotros__cover {
+  background: url(../assets/img/nosotros_shape.svg) bottom no-repeat;
+  background-size: contain; }
+
+.nosotros__gradient {
   background: linear-gradient(180deg, #D8DAFC 0%, rgba(216, 218, 252, 0) 100%); }
 
-.subtitle__text--size {
+.subtitle--size {
   font-size: 50px;
   font-weight: 600; }
-
-.nosotros__shape {
-  background-image: url(../assets/img/nosotros_shape.svg);
-  padding-top: 300px;
-  height: 600px; }
 
 .team__text {
   font-size: 20px; }
@@ -232,6 +238,5 @@ h3 {
 @media only screen and (max-width: 992px) {
   .logo {
     width: 80%; }
-  .py-md-10 {
-    padding-top: 10rem;
-    padding-bottom: 10rem; } }
+  .planes__card--list {
+    height: auto; } }

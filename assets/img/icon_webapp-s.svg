@@ -1,21 +1,3 @@
-<svg width="121" height="121" viewBox="0 0 121 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_109_1547)">
-<path d="M43.4839 42H77.5144C77.7094 41.9998 77.9025 42.038 78.0828 42.1125C78.263 42.1869 78.4268 42.2962 78.5648 42.434C78.7027 42.5719 78.8122 42.7355 78.8869 42.9157C78.9616 43.0958 79 43.289 79 43.484V77.5165C79 77.9099 78.8437 78.2873 78.5655 78.5655C78.2873 78.8437 77.91 79 77.5165 79H43.4839C43.0903 79 42.7129 78.8437 42.4346 78.5654C42.1563 78.287 42 77.9096 42 77.516V43.484C42 43.0904 42.1563 42.7129 42.4346 42.4346C42.7129 42.1563 43.0903 42 43.4839 42V42Z" stroke="#FF00C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M42 51.9609H78.9978" stroke="#FF00C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M52.5191 60.4961L48.25 64.7654L52.5191 69.0347" stroke="#FF00C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M68.1719 60.4961L72.441 64.7654L68.1719 69.0347" stroke="#FF00C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M58.2109 70.4603L62.48 57.6523" stroke="#FF00C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<filter id="filter0_d_109_1547" x="0.5" y="0.5" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="20"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.286275 0 0 0 0 0.329412 0 0 0 0 0.898039 0 0 0 0.1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_109_1547"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_109_1547" result="shape"/>
-</filter>
-</defs>
+<svg width="113" height="113" viewBox="0 0 113 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 32.2675H108.994M33.8514 56.4889L21.7365 68.6045L33.8514 80.7202M78.2715 56.4889L90.3865 68.6045L78.2715 80.7202M50.004 84.7657L62.1189 48.4188M8.21105 4H104.784C105.337 3.99936 105.886 4.10781 106.397 4.31916C106.909 4.53051 107.373 4.84061 107.765 5.23173C108.156 5.62285 108.467 6.08731 108.679 6.59857C108.891 7.10983 109 7.65785 109 8.2113V104.79C109 105.907 108.556 106.977 107.767 107.767C106.977 108.556 105.907 109 104.79 109H8.21105C7.09421 109 6.02311 108.556 5.23339 107.767C4.44366 106.977 4 105.906 4 104.789V8.2113C4 7.0944 4.44366 6.02324 5.23339 5.23346C6.02311 4.44369 7.09421 4 8.21105 4Z" stroke="#FF00C7" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
