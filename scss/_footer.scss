@@ -1,0 +1,45 @@
+.logo-footer{
+	width: 200px;
+	padding-top:1rem;
+	padding-bottom: 1.5rem;
+	transition: all 0.5s;
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+
+.servicios__footer{
+	background: $dark--color;
+	color: white;
+	padding: 6rem 0 6rem 0;
+}
+
+.servicios__footer--container{
+	display: grid;
+	grid-template-columns: 25% 15% 34% 14%;
+	grid-column-gap: 4%; 
+	@extend .margins;
+	h4{
+		font-size: 1.25rem;
+		padding-bottom: 1.5rem;
+	}
+	p{
+		font-size: 0.85rem;
+	}
+	.newsletter__form{
+		margin-bottom: 1.25rem;
+	}
+	a{
+		padding-right: 1rem;
+	}
+}
+
+
+@media (max-width: 992px){
+	.servicios__footer--container{
+	display: grid;
+	grid-template-columns: 100%;
+	gap: 3rem;
+	grid-template-rows: repeat(4, auto);
+	}
+}

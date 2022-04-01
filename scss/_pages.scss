@@ -41,12 +41,51 @@ h3{
 
 // SERVICIOS -----------------------------------------------------------------------------------------
 
+.img--size{
+	width: 50%;
+}
+
 .servicios__cover{
+	min-height: 100vh;
 	background: linear-gradient(#4B54DD 0%, rgba(39, 224, 252, 0.3) 58.31%, rgba(39, 224, 252, 0) 100%);
 	@extend .flex;
 }
 
+.servicios__cover--container{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	flex-direction: row-reverse;
+	@extend .margins;
+	h1{
+		font-size: 5rem;
+		font-weight: 600;
+	}
+}
 
+.servicios__cards--container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows:repeat(3, auto);
+	grid-column-gap: 24px;
+	grid-row-gap: 24px;
+	@extend .margins;
+	margin-bottom: 90px;
+}
+
+.servicios__card--box{
+	@extend .card--box;
+	@include size(auto, 600px);
+	align-items: center;
+	padding: 6rem 3.5rem 3.5rem 3.5rem;
+	text-align: center;
+	h3{
+		font-weight: 500;
+		font-size: calc(1.3rem + .6vw);
+		line-height: 1.2;
+		padding: 1.5rem 0 0.5rem 0;
+	}
+}
 
 
 //PLANES -----------------------------------------------------------------------------------------
@@ -97,7 +136,6 @@ h3{
 	@extend .flex;
 	background: url(../assets/img/nosotros_shape.svg) bottom no-repeat;
 	background-size: contain;
-	
 }
 
 .nosotros__gradient{
@@ -122,18 +160,44 @@ h3{
 
 //RESPONSIVE -----------------------------------------------------------------------------------------
 
-@media only screen and (max-width: 540px){
-	.container{
-		width: 90%;
+@media (max-width: 768px){
+	.servicios__cover--container{
+		flex-direction: column;
+		align-items:center;
+	}
+	.img--size{
+	width: 100%;
 	}
 }
 
-@media only screen and (max-width: 992px){
+
+@media (max-width: 992px){
+	.servicios__cover--container{
+		h1{
+		font-size: calc(1.625rem + 4.5vw);
+		}
+	}
+
 	.logo{
 		width: 80%;
 	}
 	
 	.planes__card--list{
 	height: auto;
+	}
+
+	.servicios__cards--container{
+	grid-template-columns: auto;
+	grid-template-rows:repeat(6, auto);
+	}
+
+	.servicios__card--box{
+		height: auto;
+	}
 }
+
+@media (max-width: 576px){
+	.container{
+		width: 90%;
+	}
 }

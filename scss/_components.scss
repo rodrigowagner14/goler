@@ -76,6 +76,10 @@
 }
 
 
+.font--input{
+	font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+}
 
 
 // CARDS -----------------------------------------------------------------------------------
@@ -125,6 +129,7 @@
     padding: 20px 25px 20px 55px;
     color: rgba(255, 255, 255, 0.5);
     border: none;
+    @extend .font--input;
     &:hover{
     	background-color: rgba(255, 255, 255, 0.02);
     }
@@ -171,6 +176,7 @@ label{
 .btn--primary{
 	@extend .size--input;
 	@include bg-c-b($primary--color, white, none);
+	@extend .font--input;
 	&:hover{
 		transform: scale(1.04);
 		background-color: #263086;
@@ -181,11 +187,14 @@ label{
 .btn--secundary{
 	@extend .size--input;
 	@include bg-c-b(none, $primary--color, none);
+	@extend .font--input;
 	&:hover{
 		transform: scale(1.04);
 		background-color: #D9DDFF;
 	}
 }
+
+
 
 
 //GRADIENTS ------------------------------------------------------------------------------------
@@ -205,4 +214,3 @@ $gradients:(
 		background-image: linear-gradient($color 0%, #FFFF 30%);
 	}
 }
-
